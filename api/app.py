@@ -6,6 +6,7 @@ from .services.notifications import send_notifications
 
 app = Flask(__name__)
 
+
 # Mozilla provides good references for Access Control at:
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 # https://developer.mozilla.org/en-US/docs/Web/HTTP/Server-Side_Access_Control

@@ -3,7 +3,7 @@ version: '3'
 services:
   api:
     build: api
-    command: ["flask", "run", "--host=0.0.0.0"]
+    command: [ "flask", "run", "--host=0.0.0.0" ]
     volumes:
       - ./api:/backend
     environment:
@@ -15,7 +15,7 @@ services:
   client:
     tty: true
     build: client
-    command: ["npm", "start"]
+    command: [ "npm", "start" ]
     volumes:
       - ./client:/frontend
       - node-modules:/frontend/node_modules
